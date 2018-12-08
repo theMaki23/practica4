@@ -77,6 +77,7 @@ public:
 };
 
 void insertar();
+int buscarDNI(int dni);
 
 
 
