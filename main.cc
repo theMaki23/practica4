@@ -1,4 +1,4 @@
-#include "funciones.h"
+#include "alumno.h"
 
  int main()
 {

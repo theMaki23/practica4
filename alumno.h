@@ -1,5 +1,5 @@
-#ifndef FUNCIONES_H
-#define FUNCIONES_H
+#ifndef ALUMNO_H
+#define ALUMNO_H
 
 #include <iostream>
 #include <stdio.h>
@@ -13,7 +13,7 @@ class alumno{
 	char nombre[30];
 	char apellido1[30];
 	char apellido2[30];
-	char telefono[20];
+	int telefono;
 	char email[20];
 	int postal;
 	int curso;
@@ -52,7 +52,7 @@ public:
 	char* getapellido2(){
 		return apellido2;
 	}
-	char* telefono(){
+	int gettelefono(){
 		return telefono;
 	}
 	char* getemail(){
@@ -75,6 +75,8 @@ public:
 		cout << dni <<" "<<nombre<<" "<<apellido1<<" "<<apellido2<<" "<<telefono<<" "<<email<<" "<<postal<<" "<<curso<<" "<<grupo<<" "<<lider<<"\n";
 	}
 };
+
+void insertar();
 
 
 
