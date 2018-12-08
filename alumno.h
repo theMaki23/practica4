@@ -33,6 +33,8 @@ public:
 		cin>>telefono;
 		cout<<"introudce email: \n";
 		cin>>email;
+		cout<<"introduce codigo postal: \n";
+		cin>>postal;
 		cout<<"introudce curso mas alto matriculado: \n";
 		cin>>curso;
 		cout<<"Introduce grupo: \n";
