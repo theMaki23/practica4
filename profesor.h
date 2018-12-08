@@ -16,6 +16,7 @@ class Profesor{
  public:
  	Profesor(){};
  	void iniciar_sesion();
+ 	
 
 
 };
