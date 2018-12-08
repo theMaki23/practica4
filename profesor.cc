@@ -1,12 +1,3 @@
-#include "programa.h"
+#include "profesor.h"
 
 
-void Profesor:Profesor(){
-
-}
-
-
-
-int Profesor::iniciar_sesion(){
-
-}

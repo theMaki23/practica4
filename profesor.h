@@ -1,19 +1,23 @@
-#ifndef PROGRAMA_H_
-#define PROGRAMA_H_
+#ifndef PROFESOR_H
+#define PROFESOR_H
 #include <iostream>
-#include <string>
-#include <cstdlib>
+#include <stdio.h>
+#include <fstream>
+#include <string.h>
+
 using namespace std;
 
 
 class Profesor{
  private:
- 	string nombre_, apellido_;
- 	int rol_, DNI_;
+ 	string nombre, apellido, contrasena;
+ 	int rol, dni;
 
  public:
- 	Profesor();
+ 	Profesor(){};
  	void iniciar_sesion();
 
 
 };
+
+#endif

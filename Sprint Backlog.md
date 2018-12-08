@@ -8,3 +8,4 @@ Crear la clase alumno
 Implementar la funcion de buscar e insertar alumno
 
 **Javier**
+Implementar la funcion de mostrar alumno
