@@ -27,7 +27,7 @@ class Profesor{
 		cin>>contrasena;
 	}
 
- 	void iniciar_sesion();
+ 	void iniciar_sesion(int dni);
 
  	int getdni(){
 		return dni;
@@ -52,7 +52,6 @@ class Profesor{
 	void mostrarDatos(){
 		cout<<dni<<" "<<nombre<<" "<<rol<<" "<<contrasena<<" \n";
 	}
-
 
 	void insertar();
 

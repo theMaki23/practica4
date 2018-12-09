@@ -1,21 +1,23 @@
 #include "profesor.h"
 
-void iniciar_sesion(int dni){
+void Profesor::iniciar_sesion(int dni){
 		Profesor a;
 	ifstream fp1;
 	fp1.open("credenciales.bin",ios::binary);
 	while(fp1.read((char*)&a,sizeof(a))){
-		if(a.dni()==dni){
-			cout<<"hola";
+		if(a.getdni()==dni){
+			cout<<"Comprobar la contraseña";
 			fp1.close();
 		}
 	}
-	cout<<"\nalumno no existe\n";
+	cout<<"\nDNI incorrecto, inicie de nuevo el programa \n";
 	fp1.close();
+	exit(-1);
 }
 
-void insertar(){
-	profesor p;
+
+void Profesor::insertar(){
+	Profesor p;
 	ofstream fp2;
 	fp2.open("credenciales.bin", ios::binary|ios::app);
 	p.crearProfesor();
@@ -24,9 +26,8 @@ void insertar(){
 }
 
 
-
-void mostrarBIN(){
-	profesor p;
+void Profesor::mostrarBIN(){
+	Profesor p;
 	ifstream fp1;
 	fp1.open("credenciales.bin",ios::binary);
 	while(fp1.read((char*)&p,sizeof(p))){
