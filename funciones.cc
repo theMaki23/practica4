@@ -148,3 +148,24 @@ void mostrarGrupo(int grupo){
 	}
 	fp1.close();
 }
+
+
+void mostrarLider(int lider){
+	alumno a;
+	ifstream fp1;
+	int contador=0;
+	fp1.open("alumno.bin",ios::binary);
+	while(fp1.read((char*)&a,sizeof(a))){
+		if(a.getlider()==1){
+			contador++;
+			a.mostrardata();
+		}
+	}
+	if(contador==0){
+		cout<<"no hay ningun lider registrado \n";
+	}
+	fp1.close();
+}
+
+
+
