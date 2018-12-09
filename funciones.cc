@@ -22,7 +22,7 @@ int buscarDNI(int dni){
 			return 1;
 		}
 	}
-	cout<<"\nalumno no existe\n";
+	cout<<"alumno no existe\n";
 	fp1.close();
 	return 0;
 }
@@ -46,7 +46,7 @@ int buscarNombre(char nombre[20]){
 		buscarDNI(dni);
 	}
 	if(contador==0){
-		cout<<"alumno no existe";
+		cout<<"alumno no existe\n";
 	}
 	fp1.close();
 }
@@ -69,13 +69,14 @@ int buscarApellido1(char apellido1[20]){
 		buscarDNI(dni);
 	}
 	if(contador==0){
-		cout<<"alumno no existe";
+		cout<<"alumno no existe\n";
 	}
 	fp1.close();
 }
 
 void borrarporDNI(int dni){
 	alumno a;
+	int contador=0;
 	ifstream fp1;
 	fp1.open("alumno.bin",ios::binary);
 	ofstream fp2;
@@ -84,6 +85,12 @@ void borrarporDNI(int dni){
 		if(a.getdni()!=dni){
 			fp2.write((char*)&a,sizeof(a));
 		}
+		else{
+			contador++;
+		}
+	}
+	if(contador==0){
+		cout<<"alumno no existe, nada que borrar\n";
 	}
 	fp1.close();
 	fp2.close();
