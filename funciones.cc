@@ -231,6 +231,44 @@ void ModificarporDNI(int dni){
 }
 
 
+int modificarporApellido1(char apellido1[30]){
+	fstream fp;
+	int dni;
+	alumno a;
+	int contador=0;
+	int x;
+	fp.open("alumno.bin",ios::in|ios::out);
+	while(fp.read((char*)&a, sizeof(a))){
+		if(strcmp(a.getapellido1(),apellido1)==0){
+			contador++;
+		}
+	}
+	if(contador>1){
+		cout<<"Alumno se repite, introduzca su dni: \n";
+		cin>>dni;
+		ModificarporDNI(dni);
+		return 0;
+	}
+	if(contador==1){
+		while(fp.read((char*)&a, sizeof(a))){
+		if(strcmp(a.getapellido1(),apellido1)==0){
+			a.mostrardata();
+			cout<<"\n Introduce los nuevos datos del alumno: \n";
+			a.crearAlumno();
+			fp.seekp((-1*sizeof(a)),ios::cur);
+			fp.write((char*)&a, sizeof(a));
+		}
+	}
+
+	}
+	if(contador==0){
+		cout<<"Alumno no existe\n";
+	}
+	fp.close();
+	return 1;
+}
+
+
 
 
 

@@ -4,13 +4,13 @@ int main()
 {
 
 
-int dni;
+char apellido[30];
 
 
-cout<<"Introduce el dni del alumno que desea modificar: \n";
-cin>>dni;
-buscarDNI(dni);
-ModificarporDNI(dni);
-buscarDNI(dni);
+cout<<"Introduce el apellido del alumno que desea modificar: \n";
+cin>>apellido;
+buscarApellido1(apellido);
+modificarporApellido1(apellido);
+buscarApellido1(apellido);
 return 0;
 }

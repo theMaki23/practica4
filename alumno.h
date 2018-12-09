@@ -89,6 +89,7 @@ void mostrarLider();
 void cargarFicheroBin();
 void cargarCopiaSeguridad();
 void ModificarporDNI(int dni);
+int modificarporApellido1(char apellido1[30]);
 
 
 
