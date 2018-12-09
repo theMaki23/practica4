@@ -144,7 +144,7 @@ void mostrarGrupo(int grupo){
 		}
 	}
 	if(contador==0){
-		cout<<"grupo no existe: \n";
+		cout<<"grupo no existe \n";
 	}
 	fp1.close();
 }

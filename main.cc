@@ -5,8 +5,8 @@ int main()
 /*
 insertar();
 insertar();
-insertar();
 */
+insertar();
 int dni;
 char apellido1[30];
 char nombre[30];
