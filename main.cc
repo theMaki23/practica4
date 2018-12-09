@@ -4,11 +4,13 @@ int main()
 {
 
 
-char apellido1[30];
+int dni;
 
-cargarFicheroBin();
-cout<<"Introduce el apellido del alumno que desea buscar: \n";
-cin>>apellido1;
-buscarApellido1(apellido1);
+
+cout<<"Introduce el dni del alumno que desea modificar: \n";
+cin>>dni;
+buscarDNI(dni);
+ModificarporDNI(dni);
+buscarDNI(dni);
 return 0;
 }

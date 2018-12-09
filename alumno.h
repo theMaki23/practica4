@@ -88,6 +88,7 @@ void mostrarGrupo(int grupo);
 void mostrarLider();
 void cargarFicheroBin();
 void cargarCopiaSeguridad();
+void ModificarporDNI(int dni);
 
 
 

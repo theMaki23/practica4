@@ -208,6 +208,28 @@ void cargarCopiaSeguridad(){
 }
 
 
+void ModificarporDNI(int dni){
+	fstream fp;
+	alumno a;
+	int contador=0;
+	int x;
+	fp.open("alumno.bin",ios::in|ios::out);
+	while(fp.read((char*)&a, sizeof(a))&& contador==0){
+		if(a.getdni()==dni){
+			a.mostrardata();
+			cout<<"\n Introduce los nuevos datos del alumno: \n";
+			a.crearAlumno();
+			fp.seekp((-1*sizeof(a)),ios::cur);
+			fp.write((char*)&a, sizeof(a));
+			contador++;
+		}
+	}
+	if(contador==0){
+		cout<<"Alumno no existe\n";
+	}
+	fp.close();
+}
+
 
 
 
