@@ -87,6 +87,7 @@ int borrarporApellido1(char apellido1[30]);
 void mostrarGrupo(int grupo);
 void mostrarLider();
 void cargarFicheroBin();
+void cargarCopiaSeguridad();
 
 
 

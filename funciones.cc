@@ -187,5 +187,29 @@ void cargarFicheroBin(){
 	rename("auxiliar.bin","alumno.bin");
 }
 
+void cargarCopiaSeguridad(){
+	alumno a;
+	int contador=0;
+	ifstream fp1;
+	fp1.open("CopiaSeguridad.bin",ios::binary);
+	ofstream fp2;
+	fp2.open("auxiliar.bin", ios::out|ios::binary);
+	while(fp1.read((char*)&a,sizeof(a))){
+			fp2.write((char*)&a,sizeof(a));
+			contador++;
+	}
+	if(contador==0){
+		cout<<"copia de seguridad vacia\n";
+	}
+	fp1.close();
+	fp2.close();
+	remove("alumno.bin");
+	rename("auxiliar.bin","alumno.bin");
+}
+
+
+
+
+
 
 
