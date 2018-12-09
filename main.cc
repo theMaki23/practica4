@@ -5,11 +5,11 @@ int main()
 /*
 insertar();
 insertar();
-*/
 insertar();
+*/
 int dni;
-char apellido1[20];
-char nombre[20];
+char apellido1[30];
+char nombre[30];
 /*
 cout<<"Introduce el nombre del alumno que desea buscar: ";
 cin>>nombre;
@@ -18,11 +18,17 @@ cout<<"Introduce el dni del alumno que desea buscar: ";
 cin>>dni;
 buscarDNI(dni);
 */
+cout<<"Introduce el apellido del alumno que desea buscar: \n";
+cin>>apellido1;
+buscarApellido1(apellido1);
 
-cout<<"Introduce el apellido del alumno que desea borrar: ";
+cout<<"Introduce el apellido del alumno que desea borrar: \n";
 cin>>apellido1;
 borrarporApellido1(apellido1);
 /*
+
+cout<<"Introduce el dni del alumno que desea borrar: \n";
+cin>>dni;
 borrarporDNI(dni);
 */
 return 0;
