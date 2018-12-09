@@ -274,7 +274,7 @@ int modificarporApellido1(char apellido1[30]){
 void generarFichero(){
 	ofstream fp1;
 	ifstream fp2;
-	fp1.open("basedatos.md",ios::out);
+	fp1.open("basedatos.md",ios::app);
 	alumno a;
 	int contador=0;
 	fp2.open("alumno.bin",ios::in|ios::out);
