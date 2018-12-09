@@ -184,7 +184,7 @@ void cargarFicheroBin(){
 	fp1.close();
 	fp2.close();
 	remove("alumno.bin");
-	rename("auxliar.bin","alumno.bin");
+	rename("auxiliar.bin","alumno.bin");
 }
 
 
