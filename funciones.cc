@@ -279,7 +279,11 @@ void generarFichero(){
 	int contador=0;
 	fp2.open("alumno.bin",ios::in|ios::out);
 	while(fp2.read((char*)&a, sizeof(a))){
+		contador++;
 		fp1<<a.getdni() <<" "<<a.getnombre()<<" "<<a.getapellido1()<<" "<<a.getapellido2()<<" "<<a.gettelefono()<<" "<<a.getemail()<<" "<<a.getpostal()<<" "<<a.getcurso()<<" "<<a.getgrupo()<<" "<<a.getlider()<<"\n";
+	}
+	if(contador==0){
+		cout<<"base de datos vacia";
 	}
 	fp1.close();
 	fp2.close();
