@@ -130,3 +130,21 @@ int borrarporApellido1(char apellido1[30]){
 	rename("auxiliar.bin","alumno.bin");
 	return 0;
 }
+
+
+void mostrarGrupo(int grupo){
+	alumno a;
+	ifstream fp1;
+	int contador=0;
+	fp1.open("alumno.bin",ios::binary);
+	while(fp1.read((char*)&a,sizeof(a))){
+		if(a.getgrupo()==grupo){
+			contador++;
+			a.mostrardata();
+		}
+	}
+	if(contador==0){
+		cout<<"grupo no existe: \n";
+	}
+	fp1.close();
+}
