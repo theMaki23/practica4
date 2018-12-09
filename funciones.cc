@@ -250,6 +250,8 @@ int modificarporApellido1(char apellido1[30]){
 		return 0;
 	}
 	if(contador==1){
+		fp.clear();
+		fp.seekp(0,ios_base::beg);
 		while(fp.read((char*)&a, sizeof(a))){
 		if(strcmp(a.getapellido1(),apellido1)==0){
 			a.mostrardata();
@@ -266,6 +268,21 @@ int modificarporApellido1(char apellido1[30]){
 	}
 	fp.close();
 	return 1;
+}
+
+
+void generarFichero(){
+	ofstream fp1;
+	ifstream fp2;
+	fp1.open("basedatos.md",ios::out);
+	alumno a;
+	int contador=0;
+	fp2.open("alumno.bin",ios::in|ios::out);
+	while(fp2.read((char*)&a, sizeof(a))){
+		fp1<<a.getdni() <<" "<<a.getnombre()<<" "<<a.getapellido1()<<" "<<a.getapellido2()<<" "<<a.gettelefono()<<" "<<a.getemail()<<" "<<a.getpostal()<<" "<<a.getcurso()<<" "<<a.getgrupo()<<" "<<a.getlider()<<"\n";
+	}
+	fp1.close();
+	fp2.close();
 }
 
 
