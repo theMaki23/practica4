@@ -150,7 +150,7 @@ void mostrarGrupo(int grupo){
 }
 
 
-void mostrarLider(int lider){
+void mostrarLider(){
 	alumno a;
 	ifstream fp1;
 	int contador=0;

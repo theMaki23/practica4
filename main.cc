@@ -34,5 +34,6 @@ borrarporDNI(dni);
 cout<<"Introduce el grupo del que desea ver sus integrantes: \n";
 cin>>grupo;
 mostrarGrupo(grupo);
+mostrarLider();
 return 0;
 }
