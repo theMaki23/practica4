@@ -97,3 +97,35 @@ void borrarporDNI(int dni){
 	remove("alumno.bin");
 	rename("auxiliar.bin","alumno.bin");
 }
+
+
+int borrarporApellido1(char apellido1[20]){
+	alumno a;
+	int dni;
+	int contador=0;
+	ifstream fp1;
+	fp1.open("alumno.bin",ios::binary);
+	ofstream fp2;
+	fp2.open("auxiliar.bin", ios::out|ios::binary);
+	while(fp1.read((char*)&a,sizeof(a))){
+		if(a.getapellido1()!=apellido1){
+			fp2.write((char*)&a,sizeof(a));
+		}
+		else{
+			contador++;
+		}
+	}
+	if(contador==0){
+		cout<<"alumno no existe, nada que borrar\n";
+	}
+	if(contador>1){
+		cout<<"el alumno que desea borrar se repite, introduzca su dni: \n";
+		cin>>dni;
+		borrarporDNI(dni);
+		return 0;
+	}
+	fp1.close();
+	fp2.close();
+	remove("alumno.bin");
+	rename("auxiliar.bin","alumno.bin");
+}

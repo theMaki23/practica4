@@ -83,6 +83,7 @@ int buscarDNI(int dni);
 int buscarNombre(char nombre[20]);
 int buscarApellido1(char apellido1[20]);
 void borrarporDNI(int dni);
+int borrarporApellido1(char apellido1[20]);
 
 
 
