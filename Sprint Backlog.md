@@ -6,6 +6,13 @@ Implementar la funcion iniciar sesion
 **Ricardo**
 Crear la clase alumno
 Implementar la funcion de buscar e insertar alumno
+buscar
+mostrar
+modificar
+borrar
+cargarcopia
+cargarfichero
+
 
 **Javier**
 Crear la clase baseDatos
