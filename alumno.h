@@ -86,6 +86,7 @@ void borrarporDNI(int dni);
 int borrarporApellido1(char apellido1[30]);
 void mostrarGrupo(int grupo);
 void mostrarLider();
+void cargarFicheroBin();
 
 
 

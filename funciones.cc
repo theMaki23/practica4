@@ -4,7 +4,7 @@
 void insertar(){
 	alumno a;
 	ofstream fp2;
-	fp2.open("alumno.bin", ios::binary|ios::app);
+	fp2.open("ficheroDatos.bin", ios::binary|ios::app);
 	a.crearAlumno();
 	fp2.write((char *)&a, sizeof(a));
 	fp2.close();
@@ -165,6 +165,26 @@ void mostrarLider(){
 		cout<<"no hay ningun lider registrado \n";
 	}
 	fp1.close();
+}
+
+void cargarFicheroBin(){
+	alumno a;
+	int contador=0;
+	ifstream fp1;
+	fp1.open("ficheroDatos.bin",ios::binary);
+	ofstream fp2;
+	fp2.open("auxiliar.bin", ios::out|ios::binary);
+	while(fp1.read((char*)&a,sizeof(a))){
+			fp2.write((char*)&a,sizeof(a));
+			contador++;
+	}
+	if(contador==0){
+		cout<<"fichero vacio\n";
+	}
+	fp1.close();
+	fp2.close();
+	remove("alumno.bin");
+	rename("auxliar.bin","alumno.bin");
 }
 
 
