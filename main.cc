@@ -19,5 +19,6 @@ buscarDNI(dni);
 cout<<"Introduce el apellido del alumno que desea buscar: ";
 cin>>apellido1;
 buscarApellido1(apellido1);
+borrarporDNI(dni);
 return 0;
 }
