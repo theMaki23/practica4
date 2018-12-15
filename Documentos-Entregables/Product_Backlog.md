@@ -184,3 +184,35 @@
 
 * Quiero cargar una base de datos con la cual voy a trabajar desde una copia de seguridad.
 
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+### (ANVERSO)
+**ID:** 12 **Crear clase 'Alumno'**
+
+`Crear una clase 'Alumno' en la que se van a desarrollar las funciones asignadas a dicha clase 'Alumno'`
+
+**Prioridad:** 1
+
+**Tiempo estimado de implementacion:** 0:30h
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+### (ANVERSO)
+**ID:** 13 **Crear clase 'BaseDatos'**
+
+`Crear una clase 'BaseDatos' en la que se desarrollan las funciones asignadas a dicha clase 'Base de datos'`
+
+**Prioridad:** 1
+
+**Tiempo estimado de implementacion:** 0:30h
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+### (ANVERSO)
+**ID:** 14 **Crear clase 'Profesor'**
+
+`Crear una clase 'Profesor' en la  que se desarrollan las funciones asignadas a dicha clase 'Profesor'`
+
+**Prioridad:** 1
+
+**Tiempo estimado de implementacion:** 0:30h

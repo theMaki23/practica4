@@ -21,6 +21,7 @@ class alumno{
 	int lider;
 public:
 	void crearAlumno(){
+		char opcion[1];
 		cout <<"Introduce dni: \n";
 		cin >>dni;
 		cout <<"Introduce nombre: \n";
@@ -37,10 +38,19 @@ public:
 		cin>>postal;
 		cout<<"introudce curso mas alto matriculado: \n";
 		cin>>curso;
+
+		grupo= 0;
+		lider= 0;
+		
+		cout<<"¿Desea introducir el su grupo y si es lider ahora? s/n \n";
+		cin>>opcion;
+
+		if(strcmp(opcion,"s")==0){
 		cout<<"Introduce grupo: \n";
 		cin>>grupo;
 		cout<<"introudce si es lider o no, lider=1; no lider=0: \n";
 		cin>>lider;
+		}
 	}
 	int getdni(){
 		return dni;
@@ -80,9 +90,17 @@ public:
 
 void insertar();
 int buscarDNI(int dni);
-int buscarNombre(char nombre[20]);
-int buscarApellido1(char apellido1[20]);
-
+int buscarNombre(char nombre[30]);
+int buscarApellido1(char apellido1[30]);
+void borrarporDNI(int dni);
+int borrarporApellido1(char apellido1[30]);
+void mostrarGrupo(int grupo);
+void mostrarLider();
+void cargarFicheroBin();
+void cargarCopiaSeguridad();
+void ModificarporDNI(int dni);
+int modificarporApellido1(char apellido1[30]);
+void generarFichero();
 
 
 
