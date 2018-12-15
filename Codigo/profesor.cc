@@ -19,3 +19,22 @@ bool profesor::loginProfesor(int dni, char contrasena[30]){
 	return false;
 }
 
+void profesor::generarFicheroBin(){
+	ofstream fp1;
+	ifstream fp2;
+	fp1.open("ficheroDatos.bin",ios::app);
+	alumno a;
+	int contador=0;
+	fp2.open("alumno.bin",ios::in|ios::out);
+	while(fp2.read((char*)&a, sizeof(a))){
+		contador++;
+		fp1.write((char*)&a, sizeof(a));
+	}
+		
+	if(contador==0){
+		cout<<"\nBase de datos vacia";
+	}
+	fp1.close();
+	fp2.close();
+}
+
