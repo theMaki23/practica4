@@ -33,6 +33,7 @@ public:
 	}
 	bool loginProfesor(int dni, char contrasena[30]);
 	void generarFichero();
+	void generarCopiaSeguridad();
 };
 
 
