@@ -58,3 +58,19 @@ void profesor::generarCopiaSeguridad(){
 	fp1.close();
 	fp2.close();
 }
+
+bool profesor::loginCoordinador(int dniprofesor){
+	profesor p;
+	ifstream fp1;
+	int contador=0;
+	fp1.open("credenciales.bin", ios::binary);
+	while(fp1.read((char*)&p,sizeof(p))){
+		if((p.getDNI()==dni) && (p.getrol()==1)){
+			fp1.close();
+			return true;
+		}
+	}
+	fp1.close();
+	return false;
+}
+
