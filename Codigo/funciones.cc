@@ -18,6 +18,68 @@ int contadorAlumnos(){
 }
 
 
+int comprobarLider(int grupo){
+    alumno a;
+    ifstream fp1;
+    fp1.open("alumno.bin",ios::binary);
+    while(fp1.read((char*)&a,sizeof(a))){
+        if((a.getgrupo()==grupo)&&(a.getlider()==1)){
+            cout<<"Este alumno no puede ser lider, ya hay previamente otro registrado para el mismo grupo, modificalo.\n";
+            fp1.close();
+            return 0;
+        }
+    }
+    fp1.close();
+    return 1;
+}
+
+
+int comprobarDNI(int dni){
+    alumno a;
+    ifstream fp1;
+    fp1.open("alumno.bin",ios::binary);
+    while(fp1.read((char*)&a,sizeof(a))){
+        if(a.getdni()==dni){
+            cout<<"Este alumno ya existe, modificalo.\n";
+            fp1.close();
+            return 0;
+        }
+    }
+    
+    fp1.close();
+    return 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 int menu(int opc, int dniprofesor)  
 {
     cin>>opc;

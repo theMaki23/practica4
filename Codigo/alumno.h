@@ -7,6 +7,7 @@
 #include <string.h>
 #include "validacion.h"
 
+
 using namespace std;
 
 class alumno{
@@ -30,7 +31,6 @@ public:
 		cin>>cadena;
 		}while(!validarDNI(cadena));
 		dni=atoi(cadena);
-
 		do{
 		cout <<"Introduce nombre: \n";
 		cin>>cadena;

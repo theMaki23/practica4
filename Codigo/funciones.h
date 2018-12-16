@@ -12,6 +12,10 @@ using namespace std;
 int contadorAlumnos();
 int menu(int opc, int dniprofesor);
 
+int comprobarLider(int grupo);
+int comprobarDNI(int dni);
+
+
 
 
 
