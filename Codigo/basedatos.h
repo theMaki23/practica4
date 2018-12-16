@@ -36,6 +36,9 @@ public:
 	int modificarporApellido1(char apellido1[30]);
 	void generarFichero();
 	void generarCopiaSeguridad();
+	void mostrarAlumnos(); //muestra por pantalla una lista ordenada por el dato y orden que se desee 
+	void leeAlumnos();
+	void muestra(list<alumno>& L);
 };
 
 
