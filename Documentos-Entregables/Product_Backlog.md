@@ -6,6 +6,7 @@
 **Prioridad:** 1
 
 **Tiempo estimado de implementacion:** 1:30h
+**Tiempo estimado de correccion:** 1:00h
 
 ### (REVERSO)
 
@@ -24,6 +25,7 @@
 **Prioridad:** 2
 
 **Tiempo estimado de implementacion:** 2:00h
+**Tiempo estimado de correccion:** 1:00h
 
 ### (REVERSO)
 
@@ -42,6 +44,7 @@
 **Prioridad:** 1
 
 **Tiempo estimado de implementacion:** 2:00h
+**Tiempo estimado de correccion:** 0:30h
 
 ### (REVERSO)
 
@@ -79,7 +82,8 @@
 
 **Prioridad:** 2
 
-**Tiempo estimado de implementacion:** 1:15h
+**Tiempo estimado de implementacion:** 1:00h
+**Tiempo estimado de correccion:** 0:30h
 
 ### (REVERSO)
 
@@ -97,7 +101,7 @@
 
 **Prioridad:** 2
 
-**Tiempo estimado de implementacion:** 0:45h
+**Tiempo estimado de implementacion:** 1:00h
 
 ### (REVERSO)
 
@@ -112,7 +116,7 @@
 
 **Prioridad:** 1
 
-**Tiempo estimado de implementacion:** 0:45h
+**Tiempo estimado de implementacion:** 1:00h
 
 ### (REVERSO)
 
@@ -132,6 +136,7 @@
 **Prioridad:** 2
 
 **Tiempo estimado de implementacion:** 1:00h
+**Tiempo estimado de correccion:** 1:00h
 
 ### (REVERSO)
 
@@ -163,7 +168,7 @@
 
 **Prioridad:** 1
 
-**Tiempo estimado de implementacion:** 1:45h
+**Tiempo estimado de implementacion:** 2:00h
 
 ### (REVERSO)
 
