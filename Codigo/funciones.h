@@ -9,6 +9,7 @@
 
 using namespace std;
 
+int contadorAlumnos();
 int menu(int opc, int dniprofesor);
 
 

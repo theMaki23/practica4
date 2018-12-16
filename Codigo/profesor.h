@@ -31,8 +31,9 @@ public:
 	void mostrarDatos(){
 		cout<<dni<<" "<<nombre<<" "<<rol<<" "<<contrasena<<" \n";
 	}
-	bool loginProfesor(int dni, char contrasena[30]);
 	void generarFichero();
+	bool loginProfesor(int dni, char contrasena[30]);
+	void generarFicheroBin();
 	void generarCopiaSeguridad();
 	bool loginCoordinador(int dni);
 };
