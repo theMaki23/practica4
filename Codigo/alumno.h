@@ -15,6 +15,7 @@ class alumno{
 	char nombre[30];
 	char apellido1[30];
 	char apellido2[30];
+	char apellidosnombre[100];
 	int telefono;
 	char email[20];
 	int postal;
@@ -125,6 +126,31 @@ public:
 	void mostrardata(){
 		cout <<"\n"<< "DNI: "<< dni <<"\nNombre: "<<nombre<<"\nPrimer apellido: "<<apellido1<<"\nSegundo apellido: "<<apellido2<<"\nTelefono: "<<telefono<<"\nEmail:  "<<email<<"\nCodigo postal: "<<postal<<"\nCurso mas alto matriculado: "<<curso<<"\nGrupo: "<<grupo<<"\nLider (1=si, 0=no): "<<lider<<"\n";
 	}
+
+	char* getApellidosNombre(){
+		strcpy(apellidosnombre, apellido1);
+		strcat(apellidosnombre," ");
+		strcat(apellidosnombre, apellido2);
+		strcat(apellidosnombre,", ");
+		strcat(apellidosnombre, nombre);
+		return apellidosnombre;
+	}
+
+	inline void setdni(int x){dni=x;}
+	inline void setnombre(char x[30]){strcpy(nombre,x);}
+	inline void setapellido1(char x[30]){strcpy(apellido1,x);}
+	inline void setapellido2(char x[30]){strcpy(apellido2,x);}
+	inline void settelefono(int x){telefono=x;}
+	inline void setemail(char x[30]){strcpy(email,x);}
+	inline void setpostal(int x){postal=x;}
+	inline void setcurso(int x){curso=x;}
+	inline void setgrupo(int x){grupo=x;}
+	void setlider(int x){
+		if(x==0 || x==1){
+			lider=x;
+		}
+	}
+	
 };
 
 
