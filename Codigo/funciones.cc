@@ -128,6 +128,10 @@ int menu(int opc, int dniprofesor)
             }
             break;
 
+            case 3:{
+            	b.mostrarAlumnos();
+            }break;
+
             case 4:
 
             cout<<"\nSi desea borrar por DNI pulse 1 y si desea por el apellido pulse 2: \n";
