@@ -11,7 +11,7 @@ using namespace std;
 
 
 class basedatos{
-
+	list <alumno> alumnos_;
 	int limite;
 
 public:
