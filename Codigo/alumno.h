@@ -51,7 +51,7 @@ public:
 		strcpy(apellido2,cadena);
 
 		do{
-		cout<<"Introduce telefono: \n";
+		cout<<"Introduce telefono, compuesto por 9 digitos: \n";
 		cin>>cadena;
 		}while(!validartelefono(cadena));
 		telefono=atoi(cadena);
@@ -60,13 +60,13 @@ public:
 		cin>>email;
 
 		do{
-		cout<<"Introduce codigo postal: \n";
+		cout<<"Introduce codigo postal, compuesto por 5 digitos: \n";
 		cin>>cadena;
 		}while(!validarCP(cadena));
 		postal=atoi(cadena);
 
 		do{
-		cout<<"Introuduce curso mas alto matriculado: \n";
+		cout<<"Introuduce curso mas alto matriculado, tenga en cuenta que debe ser de 2º curso en adelante: \n";
 		cin>>cadena;
 		}while(!validarcurso(cadena));
 		curso=atoi(cadena);

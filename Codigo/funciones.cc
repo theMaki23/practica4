@@ -52,34 +52,6 @@ int comprobarDNI(int dni){
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 int menu(int opc, int dniprofesor)  
 {
     cin>>opc;
