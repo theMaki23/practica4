@@ -6,6 +6,8 @@
 #include <fstream>
 #include <string.h>
 #include <ctype.h>
+#include <list>
+#include "alumno.h"
 
 using namespace std;
 
