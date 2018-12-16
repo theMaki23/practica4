@@ -1,0 +1,6 @@
+profesor1: dni: 56754307, nombre: david, rol: coordinador, contraseña: xarabanales56
+
+profesor2: dni: 87623435, nombre: antonio, rol: ayudante, contraseña: bprabanalesa87
+
+profesor3: dni: 98763432, nombre: pedro, rol: ayudante, contraseña: plrabanales98
+
