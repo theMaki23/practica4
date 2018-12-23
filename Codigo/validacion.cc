@@ -71,12 +71,17 @@ return false;
 
 
 bool validargrupo(char *grupo){
+ int i_grupo;
 	if(strlen(grupo)<4){
 		for(int i=0; i<strlen(grupo); i++){
 			if(isalpha(grupo[i])){
 				return false;
 			}
 		}
+		i_grupo = atoi(grupo);
+			if(curso==0){
+				return false;
+			}
 		return true;
 	}
 return false;
